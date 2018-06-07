@@ -2,7 +2,7 @@
 import string
 userMessage = input("Enter the message you would like to encrypt: ")
 shiftNum = int(input("Enter the shift number: "))
-alphabet = string.printable
+alphabet = string.printable[:-6]
 finalMessage = ""
 
 for x in range(0, len(userMessage)):

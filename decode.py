@@ -2,7 +2,7 @@
 import string
 userMessage = raw_input("Enter the message you would like to decrypt: ")
 shiftNum = int(raw_input("Enter the shift number: "))
-alphabet = string.printable 
+alphabet = string.printable[:6]
 finalMessage = ""
 
 for x in xrange(0, len(userMessage)):
